@@ -18,4 +18,4 @@ For example, you can write:
 
   $./foo data/edint.txt 3 
 
-In particular, our program supports the evaluation of SGD algorithm based on polynomial of degree 3 or degree 7 with several optimizations. 
+In particular, our program supports the evaluation of SGD algorithm based on polynomial of degree 3 or degree 7 with several optimizations.

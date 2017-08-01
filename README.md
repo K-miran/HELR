@@ -6,6 +6,7 @@ Our underlying homomorphic encryption scheme is “Homomorphic encryption for ar
 and we referred to its library in gitHub (https://github.com/kimandrik/HEAAN)
 
   $make clean
+  
   $make all
 
 This will build our library “libSGD.a”. Then the following should work:

@@ -283,14 +283,12 @@ Cipher* LR::getGrad_deg3(Cipher*& thetaCipher, Cipher*& zTrainCipher, LRpar& LRp
     scheme.addConstAndEqual(zSquare, LRparams.evalcoeff[1]);
     
     
-    
     //! res[i]= ((z[i]/8) * (ztheta)) * (ztheta^2 + a1/a3) * a3)
     Cipher* res= new Cipher[LRparams.dim1];
     
     NTL_EXEC_RANGE(LRparams.dim1, first, last);
     for (long i = first; i < last; ++i){
-        res[i] = zTrainCipher[i];
-        scheme.multByConst(res[i], LRparams.evalcoeff[3]);
+        res[i]= scheme.multByConst(zTrainCipher[i], LRparams.evalcoeff[3]);
         scheme.modSwitchAndEqual(res[i], scheme.params.logp);
         
         scheme.multAndEqual(res[i], ztheta);

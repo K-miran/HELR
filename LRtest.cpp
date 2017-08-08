@@ -3,14 +3,6 @@
 ZZ ScaleUp(double value, const long& l){
     ZZ res;
     
-    /*
-    ZZ ztemp= to_ZZ("1");
-    for(int i=0; i<l; i++)
-        ztemp *= 2;
-    
-    res= to_ZZ(value*ztemp);
-    */
-    
     if(l < 31) {
         res= to_ZZ((1 << l) * value);
     }
@@ -21,7 +13,6 @@ ZZ ScaleUp(double value, const long& l){
         
         res= to_ZZ(dtemp);
     }
-    
     
     return res;
 }

@@ -65,14 +65,7 @@ void LR_poly(dVec& theta, dMat zTrain, LRpar& LRparams){
             coeff += LRparams.coeff[i] * power;
         }
         
-        if(LRparams.polydeg==3){
-            coeff= 0.5- (coeff)*(LRparams.polyscale/8);
-        }
-        else{
-           coeff= 0.5- coeff*(LRparams.polyscale)/8;
-        }
-        
-
+        coeff= 0.5- coeff*(LRparams.polyscale)/8.0;
     
         for(int i = 0; i < theta.size(); ++i) grad[i] += coeff * zTrain[k][i];
     }

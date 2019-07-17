@@ -6,9 +6,10 @@ Our code requires the NTL library which is available at http://www.shoup.net/ntl
 Our underlying homomorphic encryption scheme is “Homomorphic Encryption for Arithmetic of Approximate Numbers” 
 and we referred to its library in the "src" folder (https://eprint.iacr.org/2016/421.pdf).
 
-  $make clean
-  
-  $make all
+```sh
+make clean
+make all
+```
 
 This will build our library “libHELR.a”. Then the following should work:
 

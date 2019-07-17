@@ -66,7 +66,7 @@ int main(int Argc, char** Argv) {
     // Parameters for Logistic regression
     //----------------------------------------------------------------
 
-    long logN= 11;
+    long logN= 17;
     long logp= 28;
     long logl= 10;
     long logq, cBit1, cBit2;

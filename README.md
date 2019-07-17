@@ -22,7 +22,7 @@ The program will run with a filename and a degree of approximating polynomial of
 For example, you can write:
 
 ```sh
-foo data/edint.txt 3 
+./foo data/edint.txt 3 
 ```
 
 In particular, our program supports the evaluation of the gradient descent algorithm based on polynomial of degree 3 or degree 7 with several optimizations.

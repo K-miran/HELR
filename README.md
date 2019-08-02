@@ -14,18 +14,17 @@ Our library requires a c++ compiler and the following libraries:
 
 * `HEAAN`,  which is an implementation of the paper "Homomorphic Encryption for Arithmetic of Approximate Numbers" (https://eprint.iacr.org/2016/421.pdf). We refered to the underlying HE library in the "src" folder. You can build the libarary “libheaan.a" by typing "$make all" in the "/src" directory.
 
-Our code requires the NTL library which is available at http://www.shoup.net/ntl/, and a c++ compiler. 
-Our underlying homomorphic encryption scheme is “Homomorphic Encryption for Arithmetic of Approximate Numbers” 
-and we referred to its library in the "src" folder (https://eprint.iacr.org/2016/421.pdf).
-
 ```sh
 make clean
 make all
 ```
 
-This will build our library “libHELR.a”. Then the following should work:
+### Installing HEMat library
+
+HEMat is easy to configure and build in Linux and macOS. You can then install our library by the following work with command line tools:
 
 ```sh
+make new
 g++ -std=c++11 -O2 -I/usr/local/include -pthread main.cpp libHELR.a  -o foo -L/usr/local/lib -lntl -lgmp -lm
 ```
 

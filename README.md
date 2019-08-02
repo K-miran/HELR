@@ -14,11 +14,6 @@ Our library requires a c++ compiler and the following libraries:
 
 * `HEAAN`,  which is an implementation of the paper "Homomorphic Encryption for Arithmetic of Approximate Numbers" (https://eprint.iacr.org/2016/421.pdf). We refered to the underlying HE library in the "src" folder. You can build the libarary “libheaan.a" by typing "$make all" in the "/src" directory.
 
-```sh
-make clean
-make all
-```
-
 ### Installing HELR library
 
 HELR is easy to configure and build in Linux and macOS. You can then install our library by the following work with command line tools:
@@ -29,11 +24,11 @@ make new
 
 ## Running a test source code
 
-For example, you run a test program main.cpp with a filename and a degree of approximating polynomial of the sigmoid function.
+You run a test program Test.cpp with a filename and a degree of approximating polynomial of the sigmoid function.
 For example, you can write:
 
 ```sh
-g++ -std=c++11 -O2 -I/usr/local/include -pthread main.cpp libHELR.a  -o foo -L/usr/local/lib -lntl -lgmp -lm
+g++ -std=c++11 -O2 -I/usr/local/include -pthread Test.cpp libheaan.a libHELR.a -o foo -L/usr/local/lib -lntl -lgmp -lm
 ./foo data/edint.txt 3 
 ```
 

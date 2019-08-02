@@ -28,7 +28,7 @@ You run a test program Test.cpp with a filename and a degree of approximating po
 For example, you can write:
 
 ```sh
-g++ -std=c++11 -O2 -I/usr/local/include -pthread Test_LR.cpp libheaan.a libHELR.a -o foo -L/usr/local/lib -lntl -lgmp -lm
+g++ -std=c++11 -O2 -I/usr/local/include -pthread Test_HELR.cpp libheaan.a libHELR.a -o foo -L/usr/local/lib -lntl -lgmp -lm
 ./foo data/edint.txt 3 
 ```
 

@@ -12,14 +12,9 @@ LDFLAGS = -I/usr/local/include
 LIBS    = -lntl -lm
 
 
-
 HEADER =  Database.h  LRtest.h     HELR.h
-
 SRC =    Database.cpp LRtest.cpp  HELR.cpp
-
 OBJ= $(SRC:.cpp=.o)
-
-
 
 
 lib: ar rc libheaan.a ../src/*.o
@@ -40,9 +35,7 @@ test:
 #data/edin.txt
 
 
-
 obj: $(OBJ)
-
 
 %.o: %.cpp $(HEADER)
 	 $(CC) $(CFLAGS) -c $(LDFLAGS)  $<  

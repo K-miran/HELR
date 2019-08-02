@@ -2,7 +2,7 @@
 
 HELR is a software project for performing a logistic regression training on encrypted data (Secure Logistic Regression based on Homomorphic Encryption: Design and Evaluation (https://medinform.jmir.org/2018/2/e19/))
 
-## Setting up HEMat library 
+## Setting up HELR library 
 
 ### Dependencies
 
@@ -24,7 +24,7 @@ make new
 
 ## Running a test source code
 
-You run a test program Test.cpp with a filename and a degree of approximating polynomial of the sigmoid function.
+You run a test program Test_HELR.cpp with a filename and a degree of approximating polynomial of the sigmoid function.
 For example, you can write:
 
 ```sh
